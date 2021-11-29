@@ -2,11 +2,16 @@
     "packageDirectories": [
         {
             "path": "force-app",
-            "default": true
+            "default": true,
+            "package": "crm-shared-flowComponents",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
         }
     ],
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "47.0",
-    "packageAliases": {}
+    "sourceApiVersion": "53.0",
+    "packageAliases": {
+        "crm-shared-flowComponents": "0Ho2o000000fxYJCAY"
+    }
 }

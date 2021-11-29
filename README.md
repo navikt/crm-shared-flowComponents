@@ -20,19 +20,28 @@ Template repository for CRM packages. Necessary steps after using template:
 5. Create an test metadata file in `force-app` folder to initiate init package creation (can be just a CustomLabel file)
 6. Push changes made to `force-app` and `sfdx-project.json` (remember to fetch Package ID if #crm-platform-team creates the package)
 
-# crm-shared-template
+# crm-shared-flowComponents
+Repository containing flows and flow components that can be re-used in various packages.
 
-[![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/%5BPUSH%5D%20Create%20Package/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3Acreate)
-[![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/XXXXXXXXXXXXX/blob/master/LICENSE)
+
+[![Build](https://github.com/navikt/crm-shared-flowComponents/workflows/%5BPUSH%5D%20Create%20Package/badge.svg)](https://github.com/navikt/crm-shared-flowComponents/actions?query=workflow%3Acreate)
+[![GitHub version](https://badgen.net/github/release/navikt/crm-shared-flowComponents/stable)](https://github.com/navikt/crm-shared-flowComponents)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/crm-shared-flowComponents/blob/master/LICENSE)
 
 ## Dependencies
 
-This package is dependant on the following packages
+This package is not dependant on any package
 
 -   [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
 -   [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
 
+## Content
+* Tab Closer
+  * Close the current workspace tab when added to flow as an action
+* Flow Next Screen Navigator
+  * Navigate to the next screen in a screen flow
+* Flow Next Record Navigator
+  * Navigate to a record page from a screen flow
 ## Installation
 
 1. Install [npm](https://nodejs.org/en/download/)
