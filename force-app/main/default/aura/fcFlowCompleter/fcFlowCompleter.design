@@ -1,3 +1,4 @@
-<design:component >
-
+<design:component>
+    <design:attribute name="refreshRecord" label="Refresh record?" default="false" />
+    <design:attribute name="recordId" label="ID of the record to refresh" />
 </design:component>
