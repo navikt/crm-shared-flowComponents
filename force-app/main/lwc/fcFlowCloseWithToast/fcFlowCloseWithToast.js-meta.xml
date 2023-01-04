@@ -12,6 +12,7 @@
             <property name="message" type="String" label="The main message of the toast"/>
             <property name="variant" type="String" label="The variant of the toast, valid inputs are: info, success, warning, error"/>
             <property name="mode" type="String" label="The dismiss mode to use, valid inputs are: dismissible, pester, sticky"/>
+            <property name="closeModal" type="Boolean" label="Boolean value of whether the modal should close"/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
