@@ -7,13 +7,14 @@ export default class FcFlowCloseWithToast extends LightningElement {
     @api message;
     @api variant;
     @api mode;
+    @api closeModal;
 
     connectedCallback() {
-        this.closeModal();
-        this.doTheToast();
+        if(this.closeModal) this.finishModal();
+        this.showToast();
     }
 
-    doTheToast() {
+    showToast() {
         const options = {
             title: this.title,
             message: this.message,
@@ -23,7 +24,7 @@ export default class FcFlowCloseWithToast extends LightningElement {
         this.dispatchEvent(new ShowToastEvent(options));
     }
 
-    closeModal() {
+    finishModal() {
         const closeEvent = new FlowNavigationFinishEvent();
         this.dispatchEvent(closeEvent);
     }
