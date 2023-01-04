@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Complete flow with Toast</description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="title" type="String" label="The title of the toast"/>
+            <property name="message" type="String" label="The main message of the toast"/>
+            <property name="variant" type="String" label="The variant of the toast, valid inputs are: info, success, warning, error"/>
+            <property name="mode" type="String" label="The dismiss mode to use, valid inputs are: dismissible, pester, sticky"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
